@@ -39,3 +39,12 @@
         button:hover {
             background: #0056b3;
         }
+        .error {
+            color:rgb(153, 2, 33);
+            padding: 5px;
+            border: 2px rgb(214, 42, 77) solid;
+            background-color:rgb(233, 56, 91)
+            border-radius:10px;
+            visibility: hidden;
+
+        }

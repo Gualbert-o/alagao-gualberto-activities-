@@ -3,20 +3,36 @@ function register () {
     const password = document.getElementById('password').value;
     const confirmpassword = document.getElementById('confirmpassword').value;
     const fullname = document.getElementById('fullname').value;
+    const error = document.getElementById('error')
     
     if (username === "" || password === "" || confirmpassword === "" || fullname === "") {
-        alert("Please fill in all fields");
+         error.innerHTML = "Please fill in all fields";
+        error.style.color = "white";
+        error.style.backgroundColor = "blue"
+        error.style.visibility = "visible";
     }
     else if (username != "Bilog") {
-        alert("Wrong username");
+        error.innerHTML = "Wrong username";
+        error.style.color = "beige";
+        error.style.backgroundColor = "green"
+        error.style.visibility = "visible";
     }
     else if (password != "1024") {
-        alert("Wrong password");
+        error.innerHTML = "Incorrect password";
+        error.style.color = "black";
+        error.style.backgroundColor = "gold"
+        error.style.visibility = "visible";
     }
     else if (confirmpassword != password) {
-        alert("Password does not match");
+        error.innerHTML = "Password does not match";
+        error.style.color = "pink";
+        error.style.backgroundColor = "gray"
+        error.style.visibility = "visible";
     }
     else {
-        alert("You are now registered");
+         error.innerHTML = "You are now registered";
+        error.style.color = "green";
+        error.style.backgroundColor = "yellow"
+        error.style.visibility = "visible";
     }
 }
